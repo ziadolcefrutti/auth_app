@@ -3,8 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 import 'package:auth__app/view_model/langauge_view_model.dart';
-import 'package:auth__app/core/localization.dart';
-import 'package:auth__app/main.dart'; // Replace with the correct import path for your app
 
 void main() {
   testWidgets('AppBar Localization Test', (WidgetTester tester) async {
@@ -15,7 +13,7 @@ void main() {
     await tester.pumpWidget(
       ChangeNotifierProvider<LocalizationViewModel>(
         create: (_) => localizationViewModel,
-        child: MaterialApp(
+        child:const MaterialApp(
           home: LocalizationView(),
         ),
       ),
@@ -28,14 +26,14 @@ void main() {
     expect(find.text('Welcome'), findsOneWidget);  // Assuming 'welcome' translates to 'Welcome' in English.
 
     // Change locale to Spanish (es)
-    localizationViewModel.changeLanguage(Locale('es'));
+    localizationViewModel.changeLanguage(const Locale('es'));
     await tester.pumpAndSettle();
 
     // Verify the AppBar title changes to Spanish (assuming translation exists for 'welcome' in Spanish)
     expect(find.text('Bienvenido'), findsOneWidget); // Assuming 'welcome' translates to 'Bienvenido' in Spanish.
 
     // Change locale to Urdu (ur)
-    localizationViewModel.changeLanguage(Locale('ur'));
+    localizationViewModel.changeLanguage(const Locale('ur'));
     await tester.pumpAndSettle();
 
     // Verify the AppBar title changes to Urdu (assuming translation exists for 'welcome' in Urdu)

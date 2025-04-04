@@ -1,6 +1,5 @@
 import 'package:auth__app/firebase_options.dart';
 import 'package:auth__app/view_model/langauge_view_model.dart';
-import 'package:auth__app/views/auth_view/login_view.dart';
 import 'package:auth__app/views/splash_view.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';

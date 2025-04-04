@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
 class LocalizationService {
-  static  Locale _locale=Locale('en');
+  static  Locale _locale=const Locale('en');
 
   static const Map<String, dynamic> _localizations = {
     'en': AppLocalizations.values, // English

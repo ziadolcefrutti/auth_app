@@ -1,11 +1,12 @@
+// ignore_for_file: library_private_types_in_public_api
+
 import 'package:auth__app/core/localization.dart';
 import 'package:auth__app/view_model/services/splash_services.dart';
 import 'package:flutter/material.dart';
 import 'package:auth__app/res/const/app_colors.dart'; // Adjust as per your app's color settings
-import 'package:auth__app/views/auth_view/login_view.dart'; // The next screen after splash
 
 class SplashView extends StatefulWidget {
-  const SplashView({Key? key}) : super(key: key);
+  const SplashView({super.key});
 
   @override
   _SplashScreenState createState() => _SplashScreenState();

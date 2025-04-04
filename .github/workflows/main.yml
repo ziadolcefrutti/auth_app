@@ -25,7 +25,7 @@ jobs:
           channel: 'stable'
 
       # Build APK
-      - run: flutter build apk
+      - run: flutter build apk --release
       # - run: flutter build apk --release --split-per-abi
       # - run: flutter build apk --release 
 

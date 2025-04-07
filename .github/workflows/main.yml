@@ -22,7 +22,13 @@ jobs:
           java-version: '17'
       - uses: subosito/flutter-action@v2
         with:
-          channel: 'stable'
+          channel: 'stable'      
+      
+      - name: Install Flutter dependencies
+        run: flutter pub get
+
+      - name: Generate Localization Files
+        run: flutter gen-l10n
 
       # Build APK
       - run: flutter build apk --release

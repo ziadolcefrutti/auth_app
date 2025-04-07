@@ -1,4 +1,4 @@
-import 'package:auth_app/core/failure/auth_failure.dart';
+import 'package:auth_app/core/failures/auth_failure.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 

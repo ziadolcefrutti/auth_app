@@ -31,6 +31,7 @@ class MyApp extends StatelessWidget {
     return Consumer<LanguagesProvider>(
       builder:
           (context, value, child) => MaterialApp.router(
+            debugShowCheckedModeBanner: false,
             title: 'Auth app',
             localizationsDelegates: AppLocalizations.localizationsDelegates,
             locale: value.currentLocale,

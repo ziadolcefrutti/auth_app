@@ -147,5 +147,25 @@
   "passwordNotMatch": "Passwords do not match",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
+  },
+
+  "logout": "Logout",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "areYouSureLogout": "Are you sure you want to log out?",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "cancel": "Cancel",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "confrim": "Confirm",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
   }
 }

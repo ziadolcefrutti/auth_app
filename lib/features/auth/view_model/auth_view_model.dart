@@ -1,4 +1,5 @@
 import 'package:auth_app/features/auth/repositories/auth_repositories.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class AuthViewModel extends ChangeNotifier {
@@ -6,10 +7,18 @@ class AuthViewModel extends ChangeNotifier {
   bool isLoading = false;
   bool isAuthStatus = false;
   String errorMessage = '';
+  User? _currentUser;
+
+  User? get currentUser => _currentUser;
 
   // Set the authentication status
   void setIsAuthStatus(bool val) {
     isAuthStatus = val;
+    notifyListeners();
+  }
+
+  void setCurrentUserData() {
+    _currentUser = _authRepo.currentUser;
     notifyListeners();
   }
 

@@ -4,8 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:auth_app/core/provdier/langauges_provider.dart';
 
-class LanguageSelectionPage extends StatelessWidget {
-  const LanguageSelectionPage({super.key});
+class LanguageSelectPage extends StatelessWidget {
+  const LanguageSelectPage({super.key});
 
   @override
   Widget build(BuildContext context) {

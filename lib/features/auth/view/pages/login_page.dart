@@ -141,8 +141,8 @@ class _LoginViewState extends State<LoginPage> {
             onPressed: () async {
               if (_formKey.currentState!.validate()) {
                 if (!authViewModel.isLoading) {
-                  final email = _emailController.text;
-                  final password = _passwordController.text;
+                  final email = _emailController.text.trim();
+                  final password = _passwordController.text.trim();
                   await authViewModel.login(email, password);
                   if (authViewModel.isAuthStatus) {
                     _emailController.clear();

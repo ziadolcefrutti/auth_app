@@ -178,8 +178,8 @@ class _SignUpViewState extends State<SignUpPage> {
               if (_formKey.currentState!.validate()) {
                 if (!authViewModel.isLoading) {
                   //final name = _nameController.text;
-                  final email = _emailController.text;
-                  final password = _passwordController.text;
+                  final email = _emailController.text.trim();
+                  final password = _passwordController.text.trim();
                   await authViewModel.signUp(email, password);
                   if (authViewModel.isAuthStatus) {
                     _nameController.clear();

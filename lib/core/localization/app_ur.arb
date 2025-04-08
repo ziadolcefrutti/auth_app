@@ -27,5 +27,9 @@
   "selectLangauge": "زبان منتخب کریں",
   "enterName": "براہ کرم اپنا نام درج کریں۔",
   "enterConfirmPassword": "براہ کرم اپنے پاس ورڈ کی تصدیق کریں۔",
-  "passwordNotMatch": "پاس ورڈز مماثل نہیں ہیں۔"
+  "passwordNotMatch": "پاس ورڈز مماثل نہیں ہیں۔",
+  "logout": "لاگ آؤٹ",
+  "areYouSureLogout": "کیا آپ واقعی لاگ آؤٹ کرنا چاہتے ہیں؟",
+  "cancel": "منسوخ کریں",
+  "confrim": "تصدیق کریں"
 }

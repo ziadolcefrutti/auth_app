@@ -75,11 +75,11 @@ class AuthViewModel extends ChangeNotifier {
       final user = await _authRepo.signInWithGoogle();
       if (user != null) {
         setIsAuthStatus(true);
-        print("Signed in successfully: ${user.displayName}");
+        debugPrint("Signed in successfully: ${user.displayName}");
       }
     } catch (e) {
       errorMessage = e.toString();
-      print("Error: $e");
+      debugPrint("Error: $e");
     } finally {
       notifyListeners();
     }

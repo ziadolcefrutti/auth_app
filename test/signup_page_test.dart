@@ -1,4 +1,5 @@
 import 'package:auth_app/features/auth/view/pages/login_page.dart';
+import 'package:auth_app/features/auth/view/pages/signup_page.dart';
 import 'package:auth_app/features/auth/view_model/auth_view_model.dart';
 import 'package:auth_app/core/provdier/langauges_provider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -7,7 +8,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:provider/provider.dart';
 
-// A simple mock of AuthViewModel for UI testing
+//  A simple mock of AuthViewModel for UI testing
 class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
   @override
   bool get isLoading => false;
@@ -31,23 +32,28 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 
   @override
   set isLoading(bool _isLoading) {
+    // TODO: implement isLoading
   }
 
   @override
   Future<void> logout() {
+    // TODO: implement logout
     throw UnimplementedError();
   }
 
   @override
   void setCurrentUserData() {
+    // TODO: implement setCurrentUserData
   }
 
   @override
   void setIsAuthStatus(bool val) {
+    // TODO: implement setIsAuthStatus
   }
 
   @override
   Future<void> signInWithGoogle() {
+    // TODO: implement signInWithGoogle
     throw UnimplementedError();
   }
 
@@ -64,7 +70,10 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 }
 
 void main() {
-  Widget createTestWidget({required Widget child, required langaugeCode}) {
+  Widget createTestWidget({
+    required Widget child,
+    required String langaugeCode,
+  }) {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider<AuthViewModel>(
@@ -81,59 +90,45 @@ void main() {
     );
   }
 
-  testWidgets('Login Page basic UI elements test', (WidgetTester tester) async {
+  testWidgets('Sign Up Page basic UI elements test', (
+    WidgetTester tester,
+  ) async {
     await tester.pumpWidget(
-      createTestWidget(child: const LoginPage(), langaugeCode: 'en'),
+      createTestWidget(child: const SignUpPage(), langaugeCode: 'en'),
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('Login In Account'), findsOneWidget);
-    expect(find.text('Hello! Welcome back to your account!'), findsOneWidget);
-    expect(find.text('Log in'), findsOneWidget);
-    expect(find.text("Don't have an account?"), findsOneWidget);
+    expect(find.text('Create Account'), findsOneWidget);
+    expect(find.text('Welcome! Please fill in your details.'), findsOneWidget);
+    expect(find.text('Sign Up'), findsOneWidget);
     expect(find.text("Or Continue With"), findsOneWidget);
     expect(find.text("Google"), findsOneWidget);
     expect(find.text("Facebook"), findsOneWidget);
-    expect(find.text('Forgot Password?'), findsOneWidget);
   });
 
-  //for spanish
-  testWidgets('Login Page basic UI elements test', (WidgetTester tester) async {
-    await tester.pumpWidget(
-      createTestWidget(child: const LoginPage(), langaugeCode: 'es'),
-    );
+  // For spanish
+   testWidgets('Sign Up Page basic UI elements test in spanish', (WidgetTester tester) async {
+    await tester.pumpWidget(createTestWidget(child:  const SignUpPage(),langaugeCode: 'es'));
     await tester.pumpAndSettle();
 
-    expect(find.text('Iniciar sesión en cuenta'), findsOneWidget);
-    expect(
-      find.text('¡Hola! ¡Bienvenido de nuevo a tu cuenta!'),
-      findsOneWidget,
-    );
-    expect(find.text('Iniciar sesión'), findsOneWidget);
-    expect(find.text("¿No tienes una cuenta?"), findsOneWidget);
+    expect(find.text('Crear cuenta'), findsOneWidget);
+    expect(find.text('¡Bienvenido! Por favor, complete sus detalles.'), findsOneWidget);
+    expect(find.text('Regístrate'), findsOneWidget);
     expect(find.text("O continuar con"), findsOneWidget);
     expect(find.text("Google"), findsOneWidget);
     expect(find.text("Facebook"), findsOneWidget);
-    expect(find.text('¿Has olvidado tu contraseña?'), findsOneWidget);
   });
 
-  //for Urdu langauge
-  testWidgets('Login Page basic UI elements test', (WidgetTester tester) async {
-    await tester.pumpWidget(
-      createTestWidget(child: const LoginPage(), langaugeCode: 'ur'),
-    );
+  //for Urdu
+   testWidgets('Sign Up Page basic UI elements test for Urdu Langauge', (WidgetTester tester) async {
+    await tester.pumpWidget(createTestWidget(child:  const SignUpPage(),langaugeCode: 'es'));
     await tester.pumpAndSettle();
 
-    expect(find.text("اکاؤنٹ میں لاگ ان کریں"), findsOneWidget);
-    expect(
-      find.text("ہیلو! آپ کے اکاؤنٹ میں دوبارہ خوش آمدید!"),
-      findsOneWidget,
-    );
-    expect(find.text("لاگ ان کریں"), findsOneWidget);
-    expect(find.text("کیا آپ کے پاس اکاؤنٹ نہیں ہے؟"), findsOneWidget);
+    expect(find.text( "اکاؤنٹ بنائیں"), findsOneWidget);
+    expect(find.text("خوش آمدید! براہ کرم اپنے تفصیلات مکمل کریں۔"), findsOneWidget);
+    expect(find.text("سائن اپ کریں"), findsOneWidget);
     expect(find.text("یا دوسرے طریقوں سے جاری رکھیں"), findsOneWidget);
-    expect(find.text("گوگل"), findsOneWidget);
+    expect(find.text("لاگ آؤٹ"), findsOneWidget);
     expect(find.text("فیس بک"), findsOneWidget);
-    expect(find.text("کیا آپ نے اپنا پاسورڈ بھول لیا؟"), findsOneWidget);
   });
 }

@@ -31,7 +31,7 @@ void main() {
     // Let post frame callback run
     await tester.pump();
 
-    // ✅ Check that icon and texts appear
+    // Check that icon and texts appear
     expect(find.byIcon(Icons.lock), findsOneWidget);
     expect(find.text('Welcome'), findsOneWidget); // Adjust if your localized text differs
     expect(find.text('Loading...'), findsOneWidget);

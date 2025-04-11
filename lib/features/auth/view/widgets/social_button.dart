@@ -8,12 +8,12 @@ class SocialButton extends StatelessWidget {
   final void Function()? onTap;
 
   const SocialButton({
-    Key? key,
+    super.key,
     required this.isGoogle,
     required this.icon,
     required this.label,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

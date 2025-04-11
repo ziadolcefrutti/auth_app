@@ -26,7 +26,6 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 
   @override
   set isAuthStatus(bool _isAuthStatus) {
-    // TODO: implement isAuthStatus
   }
 
   @override
@@ -53,13 +52,11 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 
   @override
   Future<void> signUp(String email, String password) {
-    // TODO: implement signUp
     throw UnimplementedError();
   }
 
   @override
   set errorMessage(String _errorMessage) {
-    // TODO: implement errorMessage
   }
 }
 

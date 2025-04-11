@@ -1,4 +1,3 @@
-import 'package:auth_app/features/auth/view/pages/login_page.dart';
 import 'package:auth_app/features/auth/view/pages/signup_page.dart';
 import 'package:auth_app/features/auth/view_model/auth_view_model.dart';
 import 'package:auth_app/core/provdier/langauges_provider.dart';
@@ -27,7 +26,6 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 
   @override
   set isAuthStatus(bool _isAuthStatus) {
-    // TODO: implement isAuthStatus
   }
 
   @override
@@ -43,29 +41,24 @@ class MockAuthViewModel extends ChangeNotifier implements AuthViewModel {
 
   @override
   void setCurrentUserData() {
-    // TODO: implement setCurrentUserData
   }
 
   @override
   void setIsAuthStatus(bool val) {
-    // TODO: implement setIsAuthStatus
   }
 
   @override
   Future<void> signInWithGoogle() {
-    // TODO: implement signInWithGoogle
     throw UnimplementedError();
   }
 
   @override
   Future<void> signUp(String email, String password) {
-    // TODO: implement signUp
     throw UnimplementedError();
   }
 
   @override
   set errorMessage(String _errorMessage) {
-    // TODO: implement errorMessage
   }
 }
 
@@ -121,14 +114,14 @@ void main() {
 
   //for Urdu
    testWidgets('Sign Up Page basic UI elements test for Urdu Langauge', (WidgetTester tester) async {
-    await tester.pumpWidget(createTestWidget(child:  const SignUpPage(),langaugeCode: 'es'));
+    await tester.pumpWidget(createTestWidget(child:  const SignUpPage(),langaugeCode: 'ur'));
     await tester.pumpAndSettle();
 
     expect(find.text( "اکاؤنٹ بنائیں"), findsOneWidget);
     expect(find.text("خوش آمدید! براہ کرم اپنے تفصیلات مکمل کریں۔"), findsOneWidget);
     expect(find.text("سائن اپ کریں"), findsOneWidget);
     expect(find.text("یا دوسرے طریقوں سے جاری رکھیں"), findsOneWidget);
-    expect(find.text("لاگ آؤٹ"), findsOneWidget);
+    expect(find.text("گوگل"), findsOneWidget);
     expect(find.text("فیس بک"), findsOneWidget);
   });
 }

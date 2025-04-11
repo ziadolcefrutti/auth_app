@@ -29,6 +29,9 @@ jobs:
 
       - name: Generate Localization Files
         run: flutter gen-l10n
+     
+      - name: Run Tests
+        run: flutter test
 
       # Build APK
       - run: flutter build apk --release

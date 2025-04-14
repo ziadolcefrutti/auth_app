@@ -44,6 +44,7 @@ dependencies:
   google_sign_in: 
   go_router: ^14.8.1
   another_flushbar: ^1.12.30
+  build_runner: ^2.4.15
 
 dev_dependencies:
   flutter_test:
@@ -55,6 +56,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  firebase_auth_mocks: 
+  google_sign_in_mocks: 
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

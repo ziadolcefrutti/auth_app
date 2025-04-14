@@ -1,6 +1,7 @@
 import 'package:auth_app/core/constants/app_colors.dart';
 import 'package:auth_app/features/splash/viewmodel/splash_viewmodel.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -11,7 +12,9 @@ class SplashPage extends StatelessWidget {
   Widget build(BuildContext context) {
     // Trigger initialization only once
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      context.read<SplashViewModel>().initialize(context);
+      context.read<SplashViewModel>().initialize((route) {
+        context.go(route);
+      },);
     });
 
     return Scaffold(

@@ -66,6 +66,7 @@ class _SignUpViewState extends State<SignUpPage> {
               SoicalButtons(authViewModel: authViewModel),
               const SizedBox(height: 50),
               SignUpRedirect(
+                // key: const Key('loginRedirect'),
                 accountTitle:
                     AppLocalizations.of(context)?.alreadyHaveAccount ?? '',
                 buttonTitle: AppLocalizations.of(context)?.login ?? '',

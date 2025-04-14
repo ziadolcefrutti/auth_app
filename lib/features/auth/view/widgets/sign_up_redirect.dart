@@ -23,6 +23,7 @@ class SignUpRedirect extends StatelessWidget {
           style: TextStyle(fontSize: 14, color: AppColors.darkGrey),
         ),
         TextButton(
+          key: Key('redirectTo'),
           onPressed: onTap,
           child: Text(
             buttonTitle,

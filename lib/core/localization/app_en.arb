@@ -109,7 +109,7 @@
     "description": "The conventional newborn programmer greeting"
   },
 
-  "enterEmail": "enter email",
+  "enterEmail": "Please enter your email",
   "@helloWorld": {
     "description": "The conventional newborn programmer greeting"
   },

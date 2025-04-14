@@ -51,12 +51,13 @@ class _HomePageState extends State<HomePage> {
         ],
       ),
       body: Center(
-        child: authViewModel.currentUser == null
-            ? const CircularProgressIndicator()
-            : Text(
-                '$helloText, $currentUserEmail',
-                style: const TextStyle(fontSize: 18),
-              ),
+        child:
+            authViewModel.currentUser == null
+                ? const CircularProgressIndicator()
+                : Text(
+                  '$helloText, $currentUserEmail',
+                  style: const TextStyle(fontSize: 18),
+                ),
       ),
     );
   }
@@ -65,25 +66,29 @@ class _HomePageState extends State<HomePage> {
   void _showLogoutConfirmationDialog(BuildContext context) {
     showDialog(
       context: context,
-      builder: (context) => AlertDialog(
-        title: Text(AppLocalizations.of(context)?.logout ?? 'Logout'),
-        content: Text(AppLocalizations.of(context)?.areYouSureLogout ?? 'Are you sure you want to log out?'),
-        actions: [
-          TextButton(
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-            child: Text(AppLocalizations.of(context)?.cancel ?? 'Cancel'),
+      builder:
+          (context) => AlertDialog(
+            title: Text(AppLocalizations.of(context)?.logout ?? 'Logout'),
+            content: Text(
+              AppLocalizations.of(context)?.areYouSureLogout ??
+                  'Are you sure you want to log out?',
+            ),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.of(context).pop();
+                },
+                child: Text(AppLocalizations.of(context)?.cancel ?? 'Cancel'),
+              ),
+              TextButton(
+                onPressed: () {
+                  context.read<AuthViewModel>().logout();
+                  context.go('/login');
+                },
+                child: Text(AppLocalizations.of(context)?.confrim ?? 'Confirm'),
+              ),
+            ],
           ),
-          TextButton(
-            onPressed: () {
-              context.read<AuthViewModel>().logout();
-              context.go('/login');
-            },
-            child: Text(AppLocalizations.of(context)?.confrim ?? 'Confirm'),
-          ),
-        ],
-      ),
     );
   }
 }

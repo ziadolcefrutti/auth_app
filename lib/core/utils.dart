@@ -5,14 +5,12 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 
 class Utils {
-  static toMessage(String message) {
-    Fluttertoast.showToast(msg: message);
-  }
 
   static void flushBarErrorMessage(message, context) {
     showFlushbar(
       context: context,
       flushbar: Flushbar(
+        key: const Key('flushbar'),
         margin: EdgeInsets.symmetric(vertical: 10, horizontal: 20),
         forwardAnimationCurve: Curves.decelerate,
         reverseAnimationCurve: Curves.easeOut,
@@ -20,7 +18,7 @@ class Utils {
         titleColor: AppColors.white,
         duration: Duration(seconds: 3),
         borderRadius: BorderRadius.circular(10),
-        icon: Icon(Icons.error, size: 20),
+        icon: Icon(Icons.error, size: 20, key: Key('flushbar_icon')),
         flushbarPosition: FlushbarPosition.TOP,
         message: message,
       )..show(context),

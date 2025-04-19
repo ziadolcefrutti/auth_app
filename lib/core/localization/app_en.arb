@@ -1,0 +1,171 @@
+{
+  "helloWorld": "Hello World!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "hello": "Hello",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "welcome": "Welcome",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "goodbye": "Goodbye",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "createAccount": "Create Account",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "welcomeMessage": "Welcome! Please fill in your details.",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "name": "Name",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "email": "Email",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "password": "Password",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "confirmPassword": "Confirm Password",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "passwordMismatch": "Passwords do not match",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "signUp": "Sign Up",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "signUp": "Sign Up",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "orSignUpWith": "Or Sign Up With",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "google": "Google",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "facebook": "Facebook",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "alreadyHaveAccount": "Already have an account?",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "login": "Log in",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "loginTitle": "Login In Account",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "loginMessage": "Hello! Welcome back to your account!",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "forgotPassword": "Forgot Password?",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "dontHaveAccount": "Don't have an account?",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "enterEmail": "Please enter your email",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "enterPassword": "Please enter your password",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "passwordLength": "Password must be at least 6 characters",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "orContinueWithOther": "Or Continue With",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "selectLangauge": "Select Langauge",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "enterName": "Please enter your name",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "enterConfirmPassword": "Please confirm your password",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "passwordNotMatch": "Passwords do not match",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+
+  "logout": "Logout",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "areYouSureLogout": "Are you sure you want to log out?",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "cancel": "Cancel",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  },
+  
+  "confrim": "Confirm",
+  "@helloWorld": {
+    "description": "The conventional newborn programmer greeting"
+  }
+}

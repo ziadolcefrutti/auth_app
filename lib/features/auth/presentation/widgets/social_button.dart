@@ -22,7 +22,7 @@ class SocialButton extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
           decoration: BoxDecoration(
-            border: Border.all(color: Colors.grey),//AppColors.lightGrey
+            border: Border.all(color: Colors.grey), //AppColors.lightGrey
             borderRadius: BorderRadius.circular(18),
           ),
           child: Row(
@@ -34,11 +34,17 @@ class SocialButton extends StatelessWidget {
                     width: 20,
                     height: 20,
                   )
-                  : Icon(icon, size: 28, color: Theme.of(context).colorScheme.tertiary),  //AppColors.blue
+                  : Icon(
+                    icon,
+                    size: 28,
+                    color: Theme.of(context).colorScheme.tertiary,
+                  ),
               const SizedBox(width: 10),
               Text(
                 label,
-                style: Theme.of(context).textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w700,)
+                style: Theme.of(
+                  context,
+                ).textTheme.bodyMedium!.copyWith(fontWeight: FontWeight.w700),
               ),
             ],
           ),

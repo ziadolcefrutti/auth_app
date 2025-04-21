@@ -49,7 +49,7 @@ class AuthsProvider with ChangeNotifier {
     _setLoading(false);
   }
 
-    Future<void> signInWithGoogle() async {
+  Future<void> signInWithGoogle() async {
     _setGoogleLoading(true);
     try {
       user = await signInWithGoogleUseCase.execute();
@@ -74,6 +74,7 @@ class AuthsProvider with ChangeNotifier {
     isLoading = value;
     notifyListeners();
   }
+
   void _setGoogleLoading(bool value) {
     isGoogleLoading = value;
     notifyListeners();

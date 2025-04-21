@@ -184,12 +184,10 @@ class _SignUpViewState extends State<SignUpPage> {
                     _emailController.clear();
                     _passwordController.clear();
                     _confirmPasswordController.clear();
-                    // ignore: use_build_context_synchronously
                     if (GoRouter.of(context).canPop()) {
                       context.pop();
                     }
                   } else if (value.errorMessage != null) {
-                    // ignore: use_build_context_synchronously
                     Utils.flushBarErrorMessage(value.errorMessage, context);
                   }
                 }

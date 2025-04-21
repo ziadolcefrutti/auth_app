@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:auth_app/core/routes/app_routes.dart';
 import 'package:auth_app/core/theme/app_pallete.dart';
 import 'package:auth_app/features/splash/app_logic/splash_provider.dart';

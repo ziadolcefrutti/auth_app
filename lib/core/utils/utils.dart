@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 class Utils {
 
+
   static void flushBarErrorMessage(message, context) {
     showFlushbar(
       context: context,

@@ -61,10 +61,8 @@ class AuthsProvider with ChangeNotifier {
   }
 
   Future<void> signOut() async {
-    _setLoading(true);
     await signOutUseCase.execute();
     user = null;
-    _setLoading(false);
   }
 
   void loadCurrentUser() {

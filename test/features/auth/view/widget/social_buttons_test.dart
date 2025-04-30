@@ -4,8 +4,6 @@ import 'package:auth_app/features/auth/view/widgets/soical_buttons.dart'; // Fix
 import 'package:auth_app/features/auth/view_model/auth_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:mockito/annotations.dart';
-
-
 import '../../../home/view/pages/home_page_test.dart';
 
 @GenerateMocks([AuthViewModel])

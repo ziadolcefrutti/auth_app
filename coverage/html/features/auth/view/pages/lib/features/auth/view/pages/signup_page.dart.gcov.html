@@ -31,13 +31,13 @@
             <td class="headerValue">lcov.info</td>
             <td></td>
             <td class="headerItem">Lines:</td>
-            <td class="headerCovTableEntryMed">86.9&nbsp;%</td>
+            <td class="headerCovTableEntryHi">92.9&nbsp;%</td>
             <td class="headerCovTableEntry">99</td>
-            <td class="headerCovTableEntry">86</td>
+            <td class="headerCovTableEntry">92</td>
           </tr>
           <tr>
             <td class="headerItem">Test Date:</td>
-            <td class="headerValue">2025-04-14 11:07:55</td>
+            <td class="headerValue">2025-04-14 15:32:05</td>
             <td></td>
             <td class="headerItem">Functions:</td>
             <td class="headerCovTableEntryHi">-</td>
@@ -74,10 +74,10 @@
 <span id="L12"><span class="lineNum">      12</span>              : import 'package:flutter_gen/gen_l10n/app_localizations.dart';</span>
 <span id="L13"><span class="lineNum">      13</span>              : </span>
 <span id="L14"><span class="lineNum">      14</span>              : class SignUpPage extends StatefulWidget {</span>
-<span id="L15"><span class="lineNum">      15</span> <span class="tlaGNC tlaBgGNC">           5 :   const SignUpPage({super.key});</span></span>
+<span id="L15"><span class="lineNum">      15</span> <span class="tlaGNC tlaBgGNC">          16 :   const SignUpPage({super.key});</span></span>
 <span id="L16"><span class="lineNum">      16</span>              : </span>
-<span id="L17"><span class="lineNum">      17</span> <span class="tlaGNC">           2 :   @override</span></span>
-<span id="L18"><span class="lineNum">      18</span> <span class="tlaGNC">           2 :   _SignUpViewState createState() =&gt; _SignUpViewState();</span></span>
+<span id="L17"><span class="lineNum">      17</span> <span class="tlaGNC">           3 :   @override</span></span>
+<span id="L18"><span class="lineNum">      18</span> <span class="tlaGNC">           3 :   _SignUpViewState createState() =&gt; _SignUpViewState();</span></span>
 <span id="L19"><span class="lineNum">      19</span>              : }</span>
 <span id="L20"><span class="lineNum">      20</span>              : </span>
 <span id="L21"><span class="lineNum">      21</span>              : class _SignUpViewState extends State&lt;SignUpPage&gt; {</span>
@@ -90,48 +90,48 @@
 <span id="L28"><span class="lineNum">      28</span>              :   final ValueNotifier&lt;bool&gt; _obscurePassword = ValueNotifier&lt;bool&gt;(true);</span>
 <span id="L29"><span class="lineNum">      29</span>              :   final ValueNotifier&lt;bool&gt; _obscureConfirmPassword = ValueNotifier&lt;bool&gt;(true);</span>
 <span id="L30"><span class="lineNum">      30</span>              : </span>
-<span id="L31"><span class="lineNum">      31</span> <span class="tlaGNC">           2 :   @override</span></span>
+<span id="L31"><span class="lineNum">      31</span> <span class="tlaGNC">           3 :   @override</span></span>
 <span id="L32"><span class="lineNum">      32</span>              :   Widget build(BuildContext context) {</span>
-<span id="L33"><span class="lineNum">      33</span> <span class="tlaGNC">           2 :     final AuthViewModel authViewModel = Provider.of&lt;AuthViewModel&gt;(</span></span>
+<span id="L33"><span class="lineNum">      33</span> <span class="tlaGNC">           3 :     final AuthViewModel authViewModel = Provider.of&lt;AuthViewModel&gt;(</span></span>
 <span id="L34"><span class="lineNum">      34</span>              :       context,</span>
 <span id="L35"><span class="lineNum">      35</span>              :       listen: false,</span>
 <span id="L36"><span class="lineNum">      36</span>              :     );</span>
-<span id="L37"><span class="lineNum">      37</span> <span class="tlaGNC">           2 :     return Scaffold(</span></span>
+<span id="L37"><span class="lineNum">      37</span> <span class="tlaGNC">           3 :     return Scaffold(</span></span>
 <span id="L38"><span class="lineNum">      38</span>              :       resizeToAvoidBottomInset: false,</span>
-<span id="L39"><span class="lineNum">      39</span> <span class="tlaGNC">           2 :       body: Padding(</span></span>
-<span id="L40"><span class="lineNum">      40</span> <span class="tlaGNC">           2 :         padding: EdgeInsets.only(</span></span>
+<span id="L39"><span class="lineNum">      39</span> <span class="tlaGNC">           3 :       body: Padding(</span></span>
+<span id="L40"><span class="lineNum">      40</span> <span class="tlaGNC">           3 :         padding: EdgeInsets.only(</span></span>
 <span id="L41"><span class="lineNum">      41</span>              :           left: 18,</span>
 <span id="L42"><span class="lineNum">      42</span>              :           right: 18,</span>
 <span id="L43"><span class="lineNum">      43</span>              :           top: 12,</span>
-<span id="L44"><span class="lineNum">      44</span> <span class="tlaGNC">           6 :           bottom: MediaQuery.of(context).viewInsets.bottom,</span></span>
+<span id="L44"><span class="lineNum">      44</span> <span class="tlaGNC">           9 :           bottom: MediaQuery.of(context).viewInsets.bottom,</span></span>
 <span id="L45"><span class="lineNum">      45</span>              :         ),</span>
-<span id="L46"><span class="lineNum">      46</span> <span class="tlaGNC">           2 :         child: Form(</span></span>
-<span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC">           2 :           key: _formKey,</span></span>
-<span id="L48"><span class="lineNum">      48</span> <span class="tlaGNC">           2 :           child: ListView(</span></span>
-<span id="L49"><span class="lineNum">      49</span> <span class="tlaGNC">           2 :             children: [</span></span>
-<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">           2 :               HeaderText(</span></span>
-<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">           4 :                 title: AppLocalizations.of(context)?.createAccount ?? '',</span></span>
-<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">           4 :                 subtitle: AppLocalizations.of(context)?.welcomeMessage ?? '',</span></span>
+<span id="L46"><span class="lineNum">      46</span> <span class="tlaGNC">           3 :         child: Form(</span></span>
+<span id="L47"><span class="lineNum">      47</span> <span class="tlaGNC">           3 :           key: _formKey,</span></span>
+<span id="L48"><span class="lineNum">      48</span> <span class="tlaGNC">           3 :           child: ListView(</span></span>
+<span id="L49"><span class="lineNum">      49</span> <span class="tlaGNC">           3 :             children: [</span></span>
+<span id="L50"><span class="lineNum">      50</span> <span class="tlaGNC">           3 :               HeaderText(</span></span>
+<span id="L51"><span class="lineNum">      51</span> <span class="tlaGNC">           5 :                 title: AppLocalizations.of(context)?.createAccount ?? '',</span></span>
+<span id="L52"><span class="lineNum">      52</span> <span class="tlaGNC">           5 :                 subtitle: AppLocalizations.of(context)?.welcomeMessage ?? '',</span></span>
 <span id="L53"><span class="lineNum">      53</span>              :               ),</span>
 <span id="L54"><span class="lineNum">      54</span>              :               const SizedBox(height: 24),</span>
-<span id="L55"><span class="lineNum">      55</span> <span class="tlaGNC">           2 :               _buildNameField(),</span></span>
+<span id="L55"><span class="lineNum">      55</span> <span class="tlaGNC">           3 :               _buildNameField(),</span></span>
 <span id="L56"><span class="lineNum">      56</span>              :               const SizedBox(height: 12),</span>
-<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">           2 :               _buildEmailField(),</span></span>
+<span id="L57"><span class="lineNum">      57</span> <span class="tlaGNC">           3 :               _buildEmailField(),</span></span>
 <span id="L58"><span class="lineNum">      58</span>              :               const SizedBox(height: 12),</span>
-<span id="L59"><span class="lineNum">      59</span> <span class="tlaGNC">           2 :               _buildPasswordField(),</span></span>
+<span id="L59"><span class="lineNum">      59</span> <span class="tlaGNC">           3 :               _buildPasswordField(),</span></span>
 <span id="L60"><span class="lineNum">      60</span>              :               const SizedBox(height: 12),</span>
-<span id="L61"><span class="lineNum">      61</span> <span class="tlaGNC">           2 :               _buildConfirmPasswordField(),</span></span>
+<span id="L61"><span class="lineNum">      61</span> <span class="tlaGNC">           3 :               _buildConfirmPasswordField(),</span></span>
 <span id="L62"><span class="lineNum">      62</span>              :               const SizedBox(height: 12),</span>
-<span id="L63"><span class="lineNum">      63</span> <span class="tlaGNC">           2 :               _buildSignUpButton(authViewModel),</span></span>
+<span id="L63"><span class="lineNum">      63</span> <span class="tlaGNC">           3 :               _buildSignUpButton(authViewModel),</span></span>
 <span id="L64"><span class="lineNum">      64</span>              :               const SizedBox(height: 12),</span>
 <span id="L65"><span class="lineNum">      65</span>              :               const AuthDivider(),</span>
-<span id="L66"><span class="lineNum">      66</span> <span class="tlaGNC">           2 :               SoicalButtons(authViewModel: authViewModel),</span></span>
+<span id="L66"><span class="lineNum">      66</span> <span class="tlaGNC">           3 :               SoicalButtons(authViewModel: authViewModel),</span></span>
 <span id="L67"><span class="lineNum">      67</span>              :               const SizedBox(height: 50),</span>
-<span id="L68"><span class="lineNum">      68</span> <span class="tlaGNC">           2 :               SignUpRedirect(</span></span>
-<span id="L69"><span class="lineNum">      69</span>              :                   // key: const Key('loginRedirect'),</span>
+<span id="L68"><span class="lineNum">      68</span> <span class="tlaGNC">           3 :               SignUpRedirect(</span></span>
+<span id="L69"><span class="lineNum">      69</span>              :                 // key: const Key('loginRedirect'),</span>
 <span id="L70"><span class="lineNum">      70</span>              :                 accountTitle:</span>
-<span id="L71"><span class="lineNum">      71</span> <span class="tlaGNC">           4 :                     AppLocalizations.of(context)?.alreadyHaveAccount ?? '',</span></span>
-<span id="L72"><span class="lineNum">      72</span> <span class="tlaGNC">           4 :                 buttonTitle: AppLocalizations.of(context)?.login ?? '',</span></span>
+<span id="L71"><span class="lineNum">      71</span> <span class="tlaGNC">           5 :                     AppLocalizations.of(context)?.alreadyHaveAccount ?? '',</span></span>
+<span id="L72"><span class="lineNum">      72</span> <span class="tlaGNC">           5 :                 buttonTitle: AppLocalizations.of(context)?.login ?? '',</span></span>
 <span id="L73"><span class="lineNum">      73</span> <span class="tlaUNC tlaBgUNC">           0 :                 onTap: () {</span></span>
 <span id="L74"><span class="lineNum">      74</span> <span class="tlaUNC">           0 :                   context.pop();</span></span>
 <span id="L75"><span class="lineNum">      75</span>              :                 },</span>
@@ -144,12 +144,12 @@
 <span id="L82"><span class="lineNum">      82</span>              :     );</span>
 <span id="L83"><span class="lineNum">      83</span>              :   }</span>
 <span id="L84"><span class="lineNum">      84</span>              : </span>
-<span id="L85"><span class="lineNum">      85</span> <span class="tlaGNC tlaBgGNC">           2 :   Widget _buildNameField() {</span></span>
-<span id="L86"><span class="lineNum">      86</span> <span class="tlaGNC">           2 :     return CustomTextField(</span></span>
-<span id="L87"><span class="lineNum">      87</span> <span class="tlaGNC">           6 :       label: AppLocalizations.of(context)?.name ?? '',</span></span>
-<span id="L88"><span class="lineNum">      88</span> <span class="tlaGNC">           2 :       controller: _nameController,</span></span>
-<span id="L89"><span class="lineNum">      89</span> <span class="tlaGNC">           1 :       validator: (value) {</span></span>
-<span id="L90"><span class="lineNum">      90</span> <span class="tlaGNC">           1 :         if (value == null || value.isEmpty) {</span></span>
+<span id="L85"><span class="lineNum">      85</span> <span class="tlaGNC tlaBgGNC">           3 :   Widget _buildNameField() {</span></span>
+<span id="L86"><span class="lineNum">      86</span> <span class="tlaGNC">           3 :     return CustomTextField(</span></span>
+<span id="L87"><span class="lineNum">      87</span> <span class="tlaGNC">           8 :       label: AppLocalizations.of(context)?.name ?? '',</span></span>
+<span id="L88"><span class="lineNum">      88</span> <span class="tlaGNC">           3 :       controller: _nameController,</span></span>
+<span id="L89"><span class="lineNum">      89</span> <span class="tlaGNC">           2 :       validator: (value) {</span></span>
+<span id="L90"><span class="lineNum">      90</span> <span class="tlaGNC">           2 :         if (value == null || value.isEmpty) {</span></span>
 <span id="L91"><span class="lineNum">      91</span> <span class="tlaGNC">           3 :           return AppLocalizations.of(context)?.enterName ?? '';</span></span>
 <span id="L92"><span class="lineNum">      92</span>              :         }</span>
 <span id="L93"><span class="lineNum">      93</span>              :         return null;</span>
@@ -157,13 +157,13 @@
 <span id="L95"><span class="lineNum">      95</span>              :     );</span>
 <span id="L96"><span class="lineNum">      96</span>              :   }</span>
 <span id="L97"><span class="lineNum">      97</span>              : </span>
-<span id="L98"><span class="lineNum">      98</span> <span class="tlaGNC">           2 :   Widget _buildEmailField() {</span></span>
-<span id="L99"><span class="lineNum">      99</span> <span class="tlaGNC">           2 :     return CustomTextField(</span></span>
-<span id="L100"><span class="lineNum">     100</span> <span class="tlaGNC">           6 :       label: AppLocalizations.of(context)?.email ?? '',</span></span>
-<span id="L101"><span class="lineNum">     101</span> <span class="tlaGNC">           2 :       controller: _emailController,</span></span>
+<span id="L98"><span class="lineNum">      98</span> <span class="tlaGNC">           3 :   Widget _buildEmailField() {</span></span>
+<span id="L99"><span class="lineNum">      99</span> <span class="tlaGNC">           3 :     return CustomTextField(</span></span>
+<span id="L100"><span class="lineNum">     100</span> <span class="tlaGNC">           8 :       label: AppLocalizations.of(context)?.email ?? '',</span></span>
+<span id="L101"><span class="lineNum">     101</span> <span class="tlaGNC">           3 :       controller: _emailController,</span></span>
 <span id="L102"><span class="lineNum">     102</span>              :       keyboardType: TextInputType.emailAddress,</span>
-<span id="L103"><span class="lineNum">     103</span> <span class="tlaGNC">           1 :       validator: (value) {</span></span>
-<span id="L104"><span class="lineNum">     104</span> <span class="tlaGNC">           1 :         if (value == null || value.isEmpty) {</span></span>
+<span id="L103"><span class="lineNum">     103</span> <span class="tlaGNC">           2 :       validator: (value) {</span></span>
+<span id="L104"><span class="lineNum">     104</span> <span class="tlaGNC">           2 :         if (value == null || value.isEmpty) {</span></span>
 <span id="L105"><span class="lineNum">     105</span> <span class="tlaGNC">           3 :           return AppLocalizations.of(context)?.enterEmail ?? '';</span></span>
 <span id="L106"><span class="lineNum">     106</span>              :         }</span>
 <span id="L107"><span class="lineNum">     107</span>              :         return null;</span>
@@ -171,16 +171,16 @@
 <span id="L109"><span class="lineNum">     109</span>              :     );</span>
 <span id="L110"><span class="lineNum">     110</span>              :   }</span>
 <span id="L111"><span class="lineNum">     111</span>              : </span>
-<span id="L112"><span class="lineNum">     112</span> <span class="tlaGNC">           2 :   Widget _buildPasswordField() {</span></span>
-<span id="L113"><span class="lineNum">     113</span> <span class="tlaGNC">           2 :     return ValueListenableBuilder(</span></span>
-<span id="L114"><span class="lineNum">     114</span> <span class="tlaGNC">           2 :       valueListenable: _obscurePassword,</span></span>
-<span id="L115"><span class="lineNum">     115</span> <span class="tlaGNC">           2 :       builder: (context, value, child) {</span></span>
-<span id="L116"><span class="lineNum">     116</span> <span class="tlaGNC">           2 :         return CustomTextField(</span></span>
-<span id="L117"><span class="lineNum">     117</span> <span class="tlaGNC">           4 :           label: AppLocalizations.of(context)?.password ?? '',</span></span>
-<span id="L118"><span class="lineNum">     118</span> <span class="tlaGNC">           2 :           controller: _passwordController,</span></span>
+<span id="L112"><span class="lineNum">     112</span> <span class="tlaGNC">           3 :   Widget _buildPasswordField() {</span></span>
+<span id="L113"><span class="lineNum">     113</span> <span class="tlaGNC">           3 :     return ValueListenableBuilder(</span></span>
+<span id="L114"><span class="lineNum">     114</span> <span class="tlaGNC">           3 :       valueListenable: _obscurePassword,</span></span>
+<span id="L115"><span class="lineNum">     115</span> <span class="tlaGNC">           3 :       builder: (context, value, child) {</span></span>
+<span id="L116"><span class="lineNum">     116</span> <span class="tlaGNC">           3 :         return CustomTextField(</span></span>
+<span id="L117"><span class="lineNum">     117</span> <span class="tlaGNC">           5 :           label: AppLocalizations.of(context)?.password ?? '',</span></span>
+<span id="L118"><span class="lineNum">     118</span> <span class="tlaGNC">           3 :           controller: _passwordController,</span></span>
 <span id="L119"><span class="lineNum">     119</span>              :           obscureText: value,</span>
-<span id="L120"><span class="lineNum">     120</span> <span class="tlaGNC">           2 :           suffixIcon: IconButton(</span></span>
-<span id="L121"><span class="lineNum">     121</span> <span class="tlaGNC">           2 :             icon: Icon(</span></span>
+<span id="L120"><span class="lineNum">     120</span> <span class="tlaGNC">           3 :           suffixIcon: IconButton(</span></span>
+<span id="L121"><span class="lineNum">     121</span> <span class="tlaGNC">           3 :             icon: Icon(</span></span>
 <span id="L122"><span class="lineNum">     122</span>              :               value ? Icons.visibility_off : Icons.visibility,</span>
 <span id="L123"><span class="lineNum">     123</span>              :               size: 14,</span>
 <span id="L124"><span class="lineNum">     124</span>              :             ),</span>
@@ -188,10 +188,10 @@
 <span id="L126"><span class="lineNum">     126</span> <span class="tlaGNC">           4 :               _obscurePassword.value = !_obscurePassword.value;</span></span>
 <span id="L127"><span class="lineNum">     127</span>              :             },</span>
 <span id="L128"><span class="lineNum">     128</span>              :           ),</span>
-<span id="L129"><span class="lineNum">     129</span> <span class="tlaGNC">           1 :           validator: (value) {</span></span>
-<span id="L130"><span class="lineNum">     130</span> <span class="tlaGNC">           1 :             if (value == null || value.isEmpty) {</span></span>
+<span id="L129"><span class="lineNum">     129</span> <span class="tlaGNC">           2 :           validator: (value) {</span></span>
+<span id="L130"><span class="lineNum">     130</span> <span class="tlaGNC">           2 :             if (value == null || value.isEmpty) {</span></span>
 <span id="L131"><span class="lineNum">     131</span> <span class="tlaGNC">           2 :               return AppLocalizations.of(context)?.enterPassword ?? '';</span></span>
-<span id="L132"><span class="lineNum">     132</span> <span class="tlaGNC">           2 :             } else if (value.length &lt; 6) {</span></span>
+<span id="L132"><span class="lineNum">     132</span> <span class="tlaGNC">           4 :             } else if (value.length &lt; 6) {</span></span>
 <span id="L133"><span class="lineNum">     133</span> <span class="tlaGNC">           2 :               return AppLocalizations.of(context)?.passwordLength ?? '';</span></span>
 <span id="L134"><span class="lineNum">     134</span>              :             }</span>
 <span id="L135"><span class="lineNum">     135</span>              :             return null;</span>
@@ -201,16 +201,16 @@
 <span id="L139"><span class="lineNum">     139</span>              :     );</span>
 <span id="L140"><span class="lineNum">     140</span>              :   }</span>
 <span id="L141"><span class="lineNum">     141</span>              : </span>
-<span id="L142"><span class="lineNum">     142</span> <span class="tlaGNC">           2 :   Widget _buildConfirmPasswordField() {</span></span>
-<span id="L143"><span class="lineNum">     143</span> <span class="tlaGNC">           2 :     return ValueListenableBuilder(</span></span>
-<span id="L144"><span class="lineNum">     144</span> <span class="tlaGNC">           2 :       valueListenable: _obscureConfirmPassword,</span></span>
-<span id="L145"><span class="lineNum">     145</span> <span class="tlaGNC">           2 :       builder: (context, value, child) {</span></span>
-<span id="L146"><span class="lineNum">     146</span> <span class="tlaGNC">           2 :         return CustomTextField(</span></span>
-<span id="L147"><span class="lineNum">     147</span> <span class="tlaGNC">           4 :           label: AppLocalizations.of(context)?.confirmPassword ?? '',</span></span>
-<span id="L148"><span class="lineNum">     148</span> <span class="tlaGNC">           2 :           controller: _confirmPasswordController,</span></span>
+<span id="L142"><span class="lineNum">     142</span> <span class="tlaGNC">           3 :   Widget _buildConfirmPasswordField() {</span></span>
+<span id="L143"><span class="lineNum">     143</span> <span class="tlaGNC">           3 :     return ValueListenableBuilder(</span></span>
+<span id="L144"><span class="lineNum">     144</span> <span class="tlaGNC">           3 :       valueListenable: _obscureConfirmPassword,</span></span>
+<span id="L145"><span class="lineNum">     145</span> <span class="tlaGNC">           3 :       builder: (context, value, child) {</span></span>
+<span id="L146"><span class="lineNum">     146</span> <span class="tlaGNC">           3 :         return CustomTextField(</span></span>
+<span id="L147"><span class="lineNum">     147</span> <span class="tlaGNC">           5 :           label: AppLocalizations.of(context)?.confirmPassword ?? '',</span></span>
+<span id="L148"><span class="lineNum">     148</span> <span class="tlaGNC">           3 :           controller: _confirmPasswordController,</span></span>
 <span id="L149"><span class="lineNum">     149</span>              :           obscureText: value,</span>
-<span id="L150"><span class="lineNum">     150</span> <span class="tlaGNC">           2 :           suffixIcon: IconButton(</span></span>
-<span id="L151"><span class="lineNum">     151</span> <span class="tlaGNC">           2 :             icon: Icon(</span></span>
+<span id="L150"><span class="lineNum">     150</span> <span class="tlaGNC">           3 :           suffixIcon: IconButton(</span></span>
+<span id="L151"><span class="lineNum">     151</span> <span class="tlaGNC">           3 :             icon: Icon(</span></span>
 <span id="L152"><span class="lineNum">     152</span>              :               value ? Icons.visibility_off : Icons.visibility,</span>
 <span id="L153"><span class="lineNum">     153</span>              :               size: 14,</span>
 <span id="L154"><span class="lineNum">     154</span>              :             ),</span>
@@ -218,10 +218,10 @@
 <span id="L156"><span class="lineNum">     156</span> <span class="tlaGNC">           4 :               _obscureConfirmPassword.value = !_obscureConfirmPassword.value;</span></span>
 <span id="L157"><span class="lineNum">     157</span>              :             },</span>
 <span id="L158"><span class="lineNum">     158</span>              :           ),</span>
-<span id="L159"><span class="lineNum">     159</span> <span class="tlaGNC">           1 :           validator: (value) {</span></span>
-<span id="L160"><span class="lineNum">     160</span> <span class="tlaGNC">           1 :             if (value == null || value.isEmpty) {</span></span>
+<span id="L159"><span class="lineNum">     159</span> <span class="tlaGNC">           2 :           validator: (value) {</span></span>
+<span id="L160"><span class="lineNum">     160</span> <span class="tlaGNC">           2 :             if (value == null || value.isEmpty) {</span></span>
 <span id="L161"><span class="lineNum">     161</span> <span class="tlaGNC">           2 :               return AppLocalizations.of(context)?.enterConfirmPassword ?? '';</span></span>
-<span id="L162"><span class="lineNum">     162</span> <span class="tlaGNC">           3 :             } else if (value != _passwordController.text) {</span></span>
+<span id="L162"><span class="lineNum">     162</span> <span class="tlaGNC">           6 :             } else if (value != _passwordController.text) {</span></span>
 <span id="L163"><span class="lineNum">     163</span> <span class="tlaGNC">           2 :               return AppLocalizations.of(context)?.passwordMismatch ?? '';</span></span>
 <span id="L164"><span class="lineNum">     164</span>              :             }</span>
 <span id="L165"><span class="lineNum">     165</span>              :             return null;</span>
@@ -231,21 +231,21 @@
 <span id="L169"><span class="lineNum">     169</span>              :     );</span>
 <span id="L170"><span class="lineNum">     170</span>              :   }</span>
 <span id="L171"><span class="lineNum">     171</span>              : </span>
-<span id="L172"><span class="lineNum">     172</span> <span class="tlaGNC">           2 :   Widget _buildSignUpButton(AuthViewModel authViewModel) {</span></span>
-<span id="L173"><span class="lineNum">     173</span> <span class="tlaGNC">           2 :     return Consumer&lt;AuthViewModel&gt;(</span></span>
+<span id="L172"><span class="lineNum">     172</span> <span class="tlaGNC">           3 :   Widget _buildSignUpButton(AuthViewModel authViewModel) {</span></span>
+<span id="L173"><span class="lineNum">     173</span> <span class="tlaGNC">           3 :     return Consumer&lt;AuthViewModel&gt;(</span></span>
 <span id="L174"><span class="lineNum">     174</span>              :       builder:</span>
-<span id="L175"><span class="lineNum">     175</span> <span class="tlaGNC">           4 :           (context, value, child) =&gt; CustomButton(</span></span>
-<span id="L176"><span class="lineNum">     176</span> <span class="tlaGNC">           4 :             title: AppLocalizations.of(context)?.signUp ?? '',</span></span>
-<span id="L177"><span class="lineNum">     177</span> <span class="tlaGNC">           2 :             isLoading: value.isLoading,</span></span>
-<span id="L178"><span class="lineNum">     178</span> <span class="tlaGNC">           1 :             onPressed: () async {</span></span>
-<span id="L179"><span class="lineNum">     179</span> <span class="tlaGNC">           3 :               if (_formKey.currentState!.validate()) {</span></span>
-<span id="L180"><span class="lineNum">     180</span> <span class="tlaUNC tlaBgUNC">           0 :                 if (!authViewModel.isLoading) {</span></span>
+<span id="L175"><span class="lineNum">     175</span> <span class="tlaGNC">           6 :           (context, value, child) =&gt; CustomButton(</span></span>
+<span id="L176"><span class="lineNum">     176</span> <span class="tlaGNC">           5 :             title: AppLocalizations.of(context)?.signUp ?? '',</span></span>
+<span id="L177"><span class="lineNum">     177</span> <span class="tlaGNC">           3 :             isLoading: value.isLoading,</span></span>
+<span id="L178"><span class="lineNum">     178</span> <span class="tlaGNC">           2 :             onPressed: () async {</span></span>
+<span id="L179"><span class="lineNum">     179</span> <span class="tlaGNC">           6 :               if (_formKey.currentState!.validate()) {</span></span>
+<span id="L180"><span class="lineNum">     180</span> <span class="tlaGNC">           1 :                 if (!authViewModel.isLoading) {</span></span>
 <span id="L181"><span class="lineNum">     181</span>              :                   //final name = _nameController.text;</span>
-<span id="L182"><span class="lineNum">     182</span> <span class="tlaUNC">           0 :                   final email = _emailController.text.trim();</span></span>
-<span id="L183"><span class="lineNum">     183</span> <span class="tlaUNC">           0 :                   final password = _passwordController.text.trim();</span></span>
-<span id="L184"><span class="lineNum">     184</span> <span class="tlaUNC">           0 :                   await authViewModel.signUp(email, password);</span></span>
-<span id="L185"><span class="lineNum">     185</span> <span class="tlaUNC">           0 :                   if (authViewModel.isAuthStatus) {</span></span>
-<span id="L186"><span class="lineNum">     186</span> <span class="tlaUNC">           0 :                     _nameController.clear();</span></span>
+<span id="L182"><span class="lineNum">     182</span> <span class="tlaGNC">           3 :                   final email = _emailController.text.trim();</span></span>
+<span id="L183"><span class="lineNum">     183</span> <span class="tlaGNC">           3 :                   final password = _passwordController.text.trim();</span></span>
+<span id="L184"><span class="lineNum">     184</span> <span class="tlaGNC">           1 :                   await authViewModel.signUp(email, password);</span></span>
+<span id="L185"><span class="lineNum">     185</span> <span class="tlaGNC">           1 :                   if (authViewModel.isAuthStatus) {</span></span>
+<span id="L186"><span class="lineNum">     186</span> <span class="tlaUNC tlaBgUNC">           0 :                     _nameController.clear();</span></span>
 <span id="L187"><span class="lineNum">     187</span> <span class="tlaUNC">           0 :                     _emailController.clear();</span></span>
 <span id="L188"><span class="lineNum">     188</span> <span class="tlaUNC">           0 :                     _passwordController.clear();</span></span>
 <span id="L189"><span class="lineNum">     189</span> <span class="tlaUNC">           0 :                     _confirmPasswordController.clear();</span></span>
@@ -253,7 +253,7 @@
 <span id="L191"><span class="lineNum">     191</span> <span class="tlaUNC">           0 :                     context.pop();</span></span>
 <span id="L192"><span class="lineNum">     192</span>              :                   } else {</span>
 <span id="L193"><span class="lineNum">     193</span>              :                     // ignore: use_build_context_synchronously</span>
-<span id="L194"><span class="lineNum">     194</span> <span class="tlaUNC">           0 :                     Utils.flushBarErrorMessage(value.errorMessage, context);</span></span>
+<span id="L194"><span class="lineNum">     194</span> <span class="tlaGNC tlaBgGNC">           2 :                     Utils.flushBarErrorMessage(value.errorMessage, context);</span></span>
 <span id="L195"><span class="lineNum">     195</span>              :                   }</span>
 <span id="L196"><span class="lineNum">     196</span>              :                 }</span>
 <span id="L197"><span class="lineNum">     197</span>              :               }</span>
@@ -262,15 +262,15 @@
 <span id="L200"><span class="lineNum">     200</span>              :     );</span>
 <span id="L201"><span class="lineNum">     201</span>              :   }</span>
 <span id="L202"><span class="lineNum">     202</span>              : </span>
-<span id="L203"><span class="lineNum">     203</span> <span class="tlaGNC tlaBgGNC">           2 :   @override</span></span>
+<span id="L203"><span class="lineNum">     203</span> <span class="tlaGNC">           3 :   @override</span></span>
 <span id="L204"><span class="lineNum">     204</span>              :   void dispose() {</span>
-<span id="L205"><span class="lineNum">     205</span> <span class="tlaGNC">           4 :     _nameController.dispose();</span></span>
-<span id="L206"><span class="lineNum">     206</span> <span class="tlaGNC">           4 :     _emailController.dispose();</span></span>
-<span id="L207"><span class="lineNum">     207</span> <span class="tlaGNC">           4 :     _passwordController.dispose();</span></span>
-<span id="L208"><span class="lineNum">     208</span> <span class="tlaGNC">           4 :     _confirmPasswordController.dispose();</span></span>
-<span id="L209"><span class="lineNum">     209</span> <span class="tlaGNC">           4 :     _obscurePassword.dispose();</span></span>
-<span id="L210"><span class="lineNum">     210</span> <span class="tlaGNC">           4 :     _obscureConfirmPassword.dispose();</span></span>
-<span id="L211"><span class="lineNum">     211</span> <span class="tlaGNC">           2 :     super.dispose();</span></span>
+<span id="L205"><span class="lineNum">     205</span> <span class="tlaGNC">           6 :     _nameController.dispose();</span></span>
+<span id="L206"><span class="lineNum">     206</span> <span class="tlaGNC">           6 :     _emailController.dispose();</span></span>
+<span id="L207"><span class="lineNum">     207</span> <span class="tlaGNC">           6 :     _passwordController.dispose();</span></span>
+<span id="L208"><span class="lineNum">     208</span> <span class="tlaGNC">           6 :     _confirmPasswordController.dispose();</span></span>
+<span id="L209"><span class="lineNum">     209</span> <span class="tlaGNC">           6 :     _obscurePassword.dispose();</span></span>
+<span id="L210"><span class="lineNum">     210</span> <span class="tlaGNC">           6 :     _obscureConfirmPassword.dispose();</span></span>
+<span id="L211"><span class="lineNum">     211</span> <span class="tlaGNC">           3 :     super.dispose();</span></span>
 <span id="L212"><span class="lineNum">     212</span>              :   }</span>
 <span id="L213"><span class="lineNum">     213</span>              : }</span>
         </pre>
